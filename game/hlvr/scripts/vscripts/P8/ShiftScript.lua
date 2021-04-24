@@ -2,11 +2,14 @@ local corridor = nil
 local doorFrame = nil
 local door = nil
 
-
 function check()
     --corridor = EntIndexToHScript(507)
-    corridor = Entities:FindByName(nil, "Corridor1")
-    print(corridor:GetName())
+    --corridor = Entities:FindByName(nil, "Corridor1")
+
+    --corridor = FindNamedEntity("test")
+    corridor = Entities:FindByName(nil, "test")
+
+    --print(corridor:GetName())
     print(corridor:GetEntityIndex())
 end
 
