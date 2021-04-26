@@ -2,15 +2,26 @@ local corridor = nil
 local doorFrame = nil
 local door = nil
 
+_G.a = {}
+
 function check()
     --corridor = EntIndexToHScript(507)
     --corridor = Entities:FindByName(nil, "Corridor1")
 
     --corridor = FindNamedEntity("test")
-    corridor = Entities:FindByName(nil, "test")
+    --corridor = Entities:FindByName(nil, "test")
 
     --print(corridor:GetName())
-    print(corridor:GetEntityIndex())
+    --print(corridor:GetEntityIndex())
+
+    a = Entities:FindAllByClassname("prop_dynamic")
+    print("long messege so its easier to find the output!!!!!!!!")
+    print(table.getn(a))
+    for i = 0,table.getn(a),1 do
+        print(a[i].InNull())
+    end
+
+
 end
 
 function ShiftCorridor()

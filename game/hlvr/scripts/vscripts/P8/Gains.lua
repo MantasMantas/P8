@@ -15,4 +15,6 @@ end
 
 function Update()
     print(HMDanchor:GetOrigin())
+    --target:SetOrigin(Vector(0,200,0))
+    print(thisEntity:EntityGroup)
 end
