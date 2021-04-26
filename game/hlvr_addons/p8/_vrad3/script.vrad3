@@ -1,4 +1,4 @@
-// maps/gainstest.vmap
+// maps/floor_1.vmap
 
 lm_compute:
     sceneinfo       scene_info.dat

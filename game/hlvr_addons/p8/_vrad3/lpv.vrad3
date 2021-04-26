@@ -1,4 +1,4 @@
-// maps/gainstest.vmap
+// maps/floor_1.vmap
 
 lpv_compute:
     sceneinfo scene_info.dat
@@ -7,30 +7,30 @@ lpv_compute:
     lpv_indirect $indirectfile $startx $starty $startz $endx $endy $endz $minspp $maxspp $errortol
     done
 
-lpv_init_995869238:
-    lpv_cells 64 44 12
-    lpv_box -384.000000 -192.000000 -72.000000 384.000000 320.000000 72.000000
-    lpv_local_to_world 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 64.000000 -0.000000 0.000000 1.000000 64.000000
+lpv_init_1878258911:
+    lpv_cells 64 64 12
+    lpv_box -384.000000 -192.000000 -72.000000 384.000000 576.000000 72.000000
+    lpv_local_to_world 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 -32.533615 -0.000000 0.000000 1.000000 64.000000
     lpv_init
-    lpv_load_solid_voxels voxels_995869238.dat
+    lpv_load_solid_voxels voxels_1878258911.dat
     done
 
 lpv_finish_all:
     sceneinfo scene_info.dat
-    run lpv_init_995869238
+    run lpv_init_1878258911
     lpv_image
-    lpv_direct_load lpv_995869238_direct_0_0_0.dat 0 0 0 36 36 12
-    lpv_indirect_load lpv_995869238_indirect_0_0_0.dat 0 0 0 36 36 12
-    lpv_direct_load lpv_995869238_direct_36_0_0.dat 36 0 0 64 36 12
-    lpv_indirect_load lpv_995869238_indirect_36_0_0.dat 36 0 0 64 36 12
-    lpv_direct_load lpv_995869238_direct_0_36_0.dat 0 36 0 36 44 12
-    lpv_indirect_load lpv_995869238_indirect_0_36_0.dat 0 36 0 36 44 12
-    lpv_direct_load lpv_995869238_direct_36_36_0.dat 36 36 0 64 44 12
-    lpv_indirect_load lpv_995869238_indirect_36_36_0.dat 36 36 0 64 44 12
+    lpv_direct_load lpv_1878258911_direct_0_0_0.dat 0 0 0 36 36 12
+    lpv_indirect_load lpv_1878258911_indirect_0_0_0.dat 0 0 0 36 36 12
+    lpv_direct_load lpv_1878258911_direct_36_0_0.dat 36 0 0 64 36 12
+    lpv_indirect_load lpv_1878258911_indirect_36_0_0.dat 36 0 0 64 36 12
+    lpv_direct_load lpv_1878258911_direct_0_36_0.dat 0 36 0 36 64 12
+    lpv_indirect_load lpv_1878258911_indirect_0_36_0.dat 0 36 0 36 64 12
+    lpv_direct_load lpv_1878258911_direct_36_36_0.dat 36 36 0 64 64 12
+    lpv_indirect_load lpv_1878258911_indirect_36_36_0.dat 36 36 0 64 64 12
     lpv_image_ambient_occlusion
     lpv_image_median_filter 3
     lpv_image_resolve
-    lpv_image_write_ambientcube           lpv_995869238_ambientcube.exr
-    lpv_image_write_direct_light_indices  lpv_995869238_dli.tga  lpv_995869238_dls.tga
+    lpv_image_write_ambientcube           lpv_1878258911_ambientcube.exr
+    lpv_image_write_direct_light_indices  lpv_1878258911_dli.tga  lpv_1878258911_dls.tga
     done
 
