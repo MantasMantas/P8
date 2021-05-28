@@ -1,51 +1,36 @@
-local corridor = nil
-local doorFrame = nil
-local door = nil
+function Shift_1()
+        -- 75.99
+        -- 56.785
+        local wall_11 = Entities:FindByName(nil, "wall_11")
+        local pos1 = Vector(56.785, 67.2158, 64.1559)
 
-_G.a = {}
+        local wall_12 = Entities:FindByName(nil, "wall_12")
+        local pos2 = Vector(-2.60781, 29.0966, 64.1788)
 
-function check()
-    --corridor = EntIndexToHScript(507)
-    --corridor = Entities:FindByName(nil, "Corridor1")
-
-    --corridor = FindNamedEntity("test")
-    --corridor = Entities:FindByName(nil, "test")
-
-    --print(corridor:GetName())
-    --print(corridor:GetEntityIndex())
-
-    a = Entities:FindAllByClassname("prop_dynamic")
-    print("long messege so its easier to find the output!!!!!!!!")
-    print(table.getn(a))
-    for i = 0,table.getn(a),1 do
-        print(a[i].InNull())
-    end
+        local wall_13 = Entities:FindByName(nil, "wall_13")
+        local pos3 = Vector(17.7095, 154.984, 64.1559)
 
 
+        local door_11 = Entities:FindByName(nil, "door_11")
+        local pos4 = Vector(18.1061, 33.1678, 1)
+
+        wall_11:SetLocalOrigin(pos1)
+        wall_12:SetLocalOrigin(pos2)
+        wall_13:SetLocalOrigin(pos3)
+        door_11:SetOrigin(pos4)
+        
 end
 
-function ShiftCorridor()
-    --corridor = Entities:FindByName(nil, "Corridor1")
-    --corridor = EntIndexToHScript(495)
-    --doorFrame = Entities:FindByName(nil, "DoorFrame1_1")
-    --door = Entities:FindByName(nil, "Door1_1")
+function Shift_2()
 
-    --corridor:SetOrigin(Vector(-17.4503,116.265,64.0148))
-    --doorFrame:SetOrigin(Vector(-36.6565,29.3683,0))
-    --door:SetOrigin(Vector(-18.5504,28.7339,1))
-end
+        -- 8.11308
+        local wall_111 = Entities:FindByName(nil, "wall_111")
+        local pos1 = Vector(39.6808, 16.8976, 64.1559)
 
-function FirstShift()
-        local group1 = Entities:FindByName(nil, "shift_group_1")
-        local group1pos = Vector(-15.7291, 67.2933, 64.1559)
+        local wall_112 = Entities:FindByName(nil, "wall_112")
+        local pos2 = Vector(-31.2455, 15.9862, 64.1559)
 
-        local group2 = Entities:FindByName(nil, "shift_group_2")
-        local group2pos = Vector(-32.0325, 29.5918, 64)
+        wall_111:SetLocalOrigin(pos1)
+        wall_112:SetLocalOrigin(pos2)
 
-        local door = Entities:FindByName(nil, "Door1_1")
-        local doorpos = Vector(-13.9264, 28.7339, 1)
-
-        group1:SetOrigin(group1pos)
-        group2:SetOrigin(group2pos)
-        door:SetOrigin(doorpos)
 end
